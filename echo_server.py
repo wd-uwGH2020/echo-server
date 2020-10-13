@@ -43,8 +43,8 @@ def server(log_buffer=sys.stderr):
                 )
 
     except KeyboardInterrupt:
-        conn.close()
-        # sock_s.close()
+        # conn.close()
+        sock_s.close()
         print('quitting echo server', file=log_buffer)
 
 if __name__ == '__main__':
